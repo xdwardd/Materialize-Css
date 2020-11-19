@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Materialize Css</title>
+    <style>
+          
+            header{
+                background: url(img/bgheader.jpg);
+                background-size: cover;
+                background-position: center;
+                min-height: 100vh;
+            }
+            section{
+                padding-top: 4vw;
+                padding-bottom: 4vw;
+            }
+            .tabs .indicator{
+                background: rgb(108, 196, 255);
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active{
+                background: transparent;
+            }
+            @media screen and (max-width:670px){
+                header{
+                    min-height: 50vh;
+                }
+            }
+    
+    </style>
+               
+</head>
+<body>
+
+    <!--header-->
+    <header>
+      <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo">Hotel Mania</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li>
+                        <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="Twitter">
+                         <i class="fab fa-twitter"></i>
+                         </a>
+                    </li>
+                    <li>
+                            <a href="" class="tooltipped btn-floating btn-small transparent" data-tooltip="Instagram">
+                             <i class="fab fa-instagram"></i>
+                             </a>
+                        </li>
+                </ul>
+
+                <!--Burger Menu-->
+                <ul class="sidenav" id="mobile-nav">
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                     <li>
+                            <a href="" class="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                      </li>
+                      <li>
+                            <a href="" class="" >
+                                 <i class="fab fa-twitter"></i>
+                            </a>
+                     </li>
+                     <li>
+                            <a href="" class="" >
+                                 <i class="fab fa-instagram"></i>
+                            </a>
+                    </li>
+                </ul>
+            </div>
+      </nav>
+    </header>
+
+    <section class="container section scrollspy" id="gallery">
+        <div class="row">
+            <div class="col s12 l4">
+                    <img src="img/gallery1.jpg" alt="" srcset="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="blue-text text-darken-2">
+                        Travel
+                </h3>
+                <p class="grey-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magnam culpa accusantium aliquam id corrupti aliquid inventore animi impedit nobis?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col s12 l4 push-l7">
+                        <img src="img/gallery2.jpg" alt="" srcset="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                    <h3 class="blue-text text-darken-2">
+                            Memories
+                    </h3>
+                    <p class="grey-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magnam culpa accusantium aliquam id corrupti aliquid inventore animi impedit nobis?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col s12 l4">
+                            <img src="img/gallery3.jpg" alt="" srcset="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                        <h3 class="blue-text text-darken-2">
+                           Enjoy
+                        </h3>
+                        <p class="grey-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magnam culpa accusantium aliquam id corrupti aliquid inventore animi impedit nobis?
+                        </p>
+                    </div>
+                </div>
+    </section>  
+    
+    
+    
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/parallax1.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    
+    <section class="container section scrollspy" id="services">
+            <div class="row">
+                <div class="col s12 l4">
+                    <h3 class="blue-text text-darken-2">Hotel Services</h3>
+                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aspernatur consequuntur vero ut repudiandae ab ipsa consequatur repellendus, natus neque.</p>
+                </div>
+                <div class="col s12 l6 offset-l2">
+                   <ul class="tabs">
+                       <li class="tab col s6">
+                           <a href="#catering" class="blue-text text-darken-2">Catering</a>
+                       </li>
+                       <li class="tab col s6">
+                            <a href="#carrental" class="blue-text text-darken-2">Car Rental</a>
+                        </li>
+                   </ul>
+                   <div class="col s12" id="catering">
+                       <p class="flow-text blue-text text-darken-2">Catering</p>
+                       <p class="grey-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas porro inventore quia aut rerum ratione quisquam veniam reprehenderit non.
+                       </p>
+
+                   </div>
+                   <div class="col s12" id="carrental">
+                        <p class="flow-text blue-text text-darken-2">Car Rental</p>
+                        <p class="grey-text">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas porro inventore quia aut rerum ratione quisquam veniam reprehenderit non.
+                        </p>
+ 
+                    </div>
+                </div>
+            </div>
+     </section>
+    <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/parallax2.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+        <section id="contacts" class="section section-contact scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l5">
+                            <div class="card-panel blue white-text center">
+                                  <i class="material-icons">email</i>
+                                  <h5>Book Now</h5>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio veritatis quaerat quis! Iure amet esse provident illo quibusdam mollitia.
+                                  </p>
+                            </div>
+                            <ul class="collection with-header">
+                                <li class="collection-header"> 
+                                  <h5>Location</h5>
+                                </li>
+                                <li class="collection-item">Hotel Mania Inc.</li>
+                                <li class="collection-item">Colon st, 123</li>
+                                <li class="collection-item">Cebu City, Philippines</li>
+      
+                            </ul>
+                        </div>
+                        <div class="col s12 l5 offset-l2">
+                      
+                         
+                             <form action="">
+                                  
+                                         <div class="input-field">
+                                             <i class="material-icons prefix">email</i>
+                                            <input type="email" id="email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                        <div class="input-field">
+                                                <i class="material-icons prefix">message</i>
+                                               <textarea type="text" id="message" class="materialize-textarea"></textarea>
+                                               <label for="message">Enter Message</label>
+                                        </div>
+                                           
+                                        <div class="input-field">
+                                            
+                                               <input type="text" class="datepicker">
+                                               <label for="datepicker">Choose your date...</label>
+                                           </div>
+                                        <div class="input-field">
+                                            <p>Type of Room...</p>
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox">
+                                                    <span>Standard</span>
+                                                </label>
+                                            </p>
+                                            <p>
+                                                <label>
+                                                     <input type="checkbox">
+                                                     <span>Modern</span>
+                                                     </label>
+                                                </p>
+                                            <p>
+                                                 <label>
+                                                 <input type="checkbox">
+                                                 <span>Superior</span>
+                                                 </label>
+                                            </p>
+
+                                        </div>
+                                        <div class="input-field">
+                                            <button class="btn blue">Submit</button>
+                                        </div>
+                            </form>
+      
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--footer-->
+
+            <footer class="page-footer grey darken-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l6">
+                                <h5>About Us</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem reprehenderit ab magnam, ipsum quo quibusdam facere amet veritatis id?
+                                </p>
+                        </div>
+                        <div class="col s12 l4 offset-l2">
+                            <h5>Credits</h5>
+                            <ul>
+                                <li>
+                                    <a href="" class="grey-text text-lighten-3">Net Ninja</a>
+                                </li>
+                                <li>
+                                    <a href="" class="grey-text text-lighten-3">Traversy Media</a>
+                                </li>
+                                <li>
+                                        <a href="" class="grey-text text-lighten-3">Edward Catapan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright grey daken-4">
+                        <div class="container center-align">
+                            &copy; 2020, Edward Catapan
+                        </div>
+                    </div>
+            </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+     //burger menu
+     $(document).ready(function(){
+            $('.sidenav').sidenav();
+    //materialboxed
+            $('.materialboxed').materialbox();
+    //parallax
+            $('.parallax').parallax();
+     //tabs
+            $('.tabs').tabs();
+    //datepicker
+            $('.datepicker').datepicker({
+
+            });
+    //tooltip
+            $('.tooltipped').tooltip();
+    //scrollspy
+            $('.scrollspy').scrollSpy();
+     });
+   
+    </script>
+</body>
+</html> 
